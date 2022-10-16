@@ -64,8 +64,10 @@ router.delete("/:id", async (req, res) => {
         console.log(deleteProduct);
     } catch (error) {
         res.status(500).json("Uncaught error");
+        console.log(error);
     }
 })
+
 
 
 module.exports = router;
